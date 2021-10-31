@@ -1,0 +1,1 @@
+export const host = 'https://mandoe-pay.herokuapp.com' 

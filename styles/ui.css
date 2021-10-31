@@ -1,0 +1,266 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pagewrap {
+  display: flex;
+
+  /*vertically stack children*/
+  flex-direction: column;
+
+  /* expand to take full height of page */
+  /* min-height overrides both height & max-height */
+  min-height: 100vh;
+  max-height: 100vh;
+
+}
+
+.pro-sidebar {
+  height: 120vh !important;
+  min-height: 100%;
+  /* width: 100%; */
+}
+
+.dashboard-box {
+  background-color: #11979c;
+  color: white;
+  border-radius: 14px;
+  /* box-shadow: 0 18px 35px rgb(0 0 0 / 15%); */
+}
+
+.report-board {
+  max-width: 465px;
+  width: 100%;
+}
+.report-link p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 1rem;
+}
+.report-link span {
+  padding-top: 0.2rem;
+}
+.report-link {
+  border: 1px solid rgba(128, 128, 128, 0.336);
+  /* box-shadow: 0 18px 35px rgb(0 0 0 / 15%); */
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Scrollable Card */
+.activity-cards {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.activity-cards::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+
+.activity-cards::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  /* box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%); */
+}
+
+.activity-cards::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+
+.activity-cards-items {
+  height: 150px;
+  max-width: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #5a1d65;
+  display: flex;
+  flex-direction: column;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin: 5px;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+  /* box-shadow: 0 10px 9px rgb(0 0 0 / 15%); */
+  justify-content: center;
+}
+
+.activity-cards-info-flex {
+  display: flex;
+  flex-direction: row;
+  /* padding: 0.5rem; */
+}
+
+.activity-cards-text-small {
+  text-align: left;
+  color: white;
+  font-size: 20px;
+}
+
+.activity-cards-text-large {
+  text-align: left;
+  color: white;
+  font-size: 30px;
+}
+
+.activity-cards-icon {
+  text-align: left;
+  color: white;
+  font-size: 20px;
+}
+
+/* Scroll Bars Ends */
+
+p {
+  margin: 2px !important;
+}
+
+.svg-carc {
+  z-index: -1;
+}
+
+.card-wallet-content {
+  color: white;
+}
+
+.profile-img {
+  height: 200px;
+  width: 100;
+}
+
+.profile-img img {
+  height: inherit;
+}
+
+.anon-box-header {
+  background-color: #5a1d65;
+}
+
+.anon-box-header p {
+  color: #f5a623;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.anon-box-amount {
+  color: black;
+  font-size: 25px;
+  text-align: left;
+}
+
+.anon-details-items-left {
+  color: black;
+  font-size: 17px;
+  text-align: left;
+}
+
+.anon-details-items-right {
+  color: black;
+  font-size: 17px;
+  text-align: right;
+}
+
+.side-padding {
+  padding: 0rem 4rem;
+}
+
+.intro-card span h1 {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.intro-card span p {
+  font-size: 1rem;
+  color: rgb(223, 219, 219);
+  padding: 0rem 0.5rem;
+}
+
+.intro-text {
+  background: rgb(241, 231, 218);
+  width: 150px;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+
+.intro-card-icon {
+  text-align: center;
+  font-size: 30px;
+  color: #f5a623;
+  margin: 5px 0px 5px 0px;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.about-link {
+  color: #6f0083;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
+.legal-box {
+  background-color: bisque;
+  padding: 1rem;
+}
+
+.img-fitter {
+  object-fit: contain;
+}
+
+.page-margin {
+  padding: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  /* align-self: center; */
+  width: 100%;
+  max-width: 500px;
+}
+
+.payment-header-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #5a1d65;
+}
+
+.profile-box {
+  height: 20px;
+}
+
+.profile-img {
+  height: inherit;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+next-route-announcer{
+  display: none;
+}
+
+@media only screen and (max-width: 769px) {
+  .activity-cards-items {
+    min-width: 90%;
+  }
+  .proper-padding{
+    margin-top: 4rem;
+    /* height: 0vh; */
+    margin-bottom: 4rem;
+  }
+  .some-bg{
+    margin-bottom: 3rem;
+  }
+}
+

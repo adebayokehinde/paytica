@@ -1,0 +1,370 @@
+.layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .myAling {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .burgerCointainer {
+    display: flex;
+    flex-direction: column;
+    background: rgb(95, 95, 95);
+    border-radius: 50%;
+    align-items: center;
+    width: 20px;
+  }
+  
+  .burgerCointainer-icon {
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .layout .toolBarchildWrapper {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .layout .toolBarchildWrapper .toolBarWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 200;
+  }
+  
+  .layout .sideBarWrapper {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+  
+  .layout .open {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  
+  @media screen and (min-width: 990px) {
+    .layout .sideBarWrapper,
+    .layout .open {
+      position: static;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .sideBar {
+    width: 300px;
+    max-width: 85vw;
+    height: 100%;
+    background-color: #2c2d3f;
+    background-image: url("/nav-bg.png");
+    background-position: center;
+    background-size: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .sideBar .sideToolbar {
+    background-color: #2c2d3f;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 70px;
+    padding: 0 10px;
+  }
+  
+  .sideBar .sideToolbar .togglerWrapper {
+    width: 30px;
+    margin-left: auto;
+  }
+  
+  .sideBar .navs {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 20px 10px;
+    overflow: auto;
+  }
+  
+  .sideBar .navs .navItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .sideBar .navs .navItem .navItemTag {
+    background: #171821;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    color: #fff;
+  }
+  
+  .sideBar .navs .navItem ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+  }
+  
+  .sideBar .navs .navItem ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .sideBar .navs .navItem ul li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .sideBar .navs .navItem ul li a {
+    width: 100%;
+    background-color: rgba(44, 45, 63, 0.4);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  
+  .sideBar .navs .navItem ul li a span {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .sideBar .navs .navItem ul li a i {
+    color: #a7cc48;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  
+  .sideBar .navs .navItem ul li:hover {
+    border-left: 2px solid #2c2d3f;
+  }
+  
+  .sideBar .navs .navItem ul li:hover a {
+    background-color: #a7cc48;
+  }
+  
+  .sideBar .navs .navItem ul li:hover a i {
+    color: #2c2d3f;
+  }
+  
+  .sideBar .navs .navItem ul .active {
+    background-color: #a7cc48;
+  }
+  
+  .sideBar .navs .navItem ul .active a {
+    background-color: #a7cc48;
+  }
+  
+  .sideBar .navs .navItem ul .active a i {
+    color: #2c2d3f;
+  }
+  
+  .toolBar {
+    background-color: #fff;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  }
+  
+  .toolBar .contents {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .toolBar .contents .togglerWrapper {
+    width: 30px;
+    margin-left: auto;
+  }
+  
+  .toolBar .contents .togglerWrapper .barToggler {
+    height: 2px;
+    width: 100%;
+    background-color: #5a1d65;
+    position: relative;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .toolBar .contents .togglerWrapper .barToggler::before {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 100%;
+    background-color: #5a1d65;
+    position: absolute;
+    bottom: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .toolBar .contents .togglerWrapper .barToggler::after {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 100%;
+    background-color: #5a1d65;
+    position: absolute;
+    top: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 1;
+  }
+  
+  .toolBar .contents .togglerWrapper .barsTimes {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: hidden;
+    background-color: #2c2d3f;
+  }
+  
+  .toolBar .contents .togglerWrapper .barsTimes::before {
+    -webkit-transform: translateX(100%) rotate(-45deg);
+    transform: translateX(100%) rotate(-45deg);
+    bottom: 0;
+    visibility: visible;
+  }
+  
+  .toolBar .contents .togglerWrapper .barsTimes::after {
+    -webkit-transform: translateX(100%) rotate(45deg);
+    transform: translateX(100%) rotate(45deg);
+    visibility: visible;
+    top: 0;
+  }
+  
+  .toolBar .contents .signOutWrapper {
+    color: #fff;
+    cursor: pointer;
+    background-color: #a7cc48;
+    padding: 5px 20px;
+  }
+  
+  .toolBar .panel {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: rgba(128, 19, 0, 0.8);
+    width: 100%;
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1000 !important;
+  }
+  
+  .toolBar .panel .user i {
+    font-size: 24px;
+    color: #a7cc48;
+  }
+  
+  .toolBar .panel .user span {
+    color: #fff;
+  }
+  
+  @media screen and (min-width: 990px) {
+    .toolBar {
+      padding-right: 400px;
+      padding-left: 50px;
+    }
+    .toolBar .contents .togglerWrapper {
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .toolBar .panel {
+      padding-right: 400px;
+      padding-left: 50px;
+    }
+  }
+  
+  .childrenWrapper {
+    /* padding-top: 80px;
+    padding-bottom: 50px; */
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #ffffff;
+    overflow: auto;
+  }
+  
+  .childrenWrapper::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .childrenWrapper::-webkit-scrollbar-track {
+    background: #b7b7b7;
+  }
+  
+  /* .childrenWrapper::-webkit-scrollbar-thumb {
+    background: #002e54;
+    border-radius: 1px !important;
+  } */
+  
+  @media screen and (min-width: 990px) {
+    .childrenWrapper {
+      /* padding: 150px 50px 50px 50px; */
+    }
+  }
+  /*# sourceMappingURL=layout.module.css.map */
+  

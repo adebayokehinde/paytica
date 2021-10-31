@@ -1,0 +1,65 @@
+.reportSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.reportSection-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0px 20px 0px;
+}
+
+.reportSection-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 60px;
+  background-color: chartreuse;
+  border: 2px solid black;
+}
+
+.reportSection-content-icon-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.reportSection-content-icon {
+  color: blue;
+  font-size: 20px;
+  text-align: left;
+}
+
+.reportSection-content-text-large {
+  text-align: left;
+  font-size: 23px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.reportSection-content-text-small {
+  text-align: left;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  padding: 4px;
+}
+
+@media only screen and (max-width: 769px) {
+  .reportSection-content-text-large {
+    text-align: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+
+  .reportSection-content-text-small {
+    text-align: left;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    padding: 4px;
+  }
+}

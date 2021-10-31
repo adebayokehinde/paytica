@@ -1,0 +1,635 @@
+
+.section-grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(2, 1fr);
+    padding: 20px 0px 20px 0px;   
+}
+
+.exc-mobile {
+    max-width: 569px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+    
+
+.form-spinning-icon{
+    font-size: 14px;
+    text-align: center;
+    transition: 0.3ms;
+
+}
+
+.paymentForm-area{
+    max-width: 500px;
+    /* margin-top: 90px; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    padding: 20px ;
+    border: 4px solid #f3f6f3;
+    margin: 2rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+}
+
+.paymentForm-content{
+    max-width: 500px;
+    /* margin-top: 90px; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem ;
+    /* border: 1px solid #f3f6f3; */
+    border-radius: 14px;
+    margin: 0rem;
+    box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.15);
+    transition: all 200ms linear;
+
+}
+
+.QR-flexContain{
+    padding-top: 0px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.flexContain{
+    padding-top: 0px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+
+.paymentBox-flex{
+    padding-top: 0px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    max-width: 500px;
+}
+.payBox-heading{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    padding-bottom :10px;
+}
+
+.payBox-text{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+
+.payBox-error-message{
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    color: red;
+}
+
+.payBox-success-message{
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    color: green;
+}
+
+
+.copyAddressButton{
+    margin-top: 20px;
+    padding: 20px; 
+    background-color: white;
+    font-weight: 500;
+    font-size: 16px;
+    width: 200px;
+    height: 48px;
+    color: rgb(38, 124, 38);
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    border: 2px solid rgb(38, 124, 38);
+}
+
+
+/* PayOpts */
+
+.paymentOptionBoxes-container{
+    margin-top: 20px;
+    display: flex;
+    height: 130px;
+    padding: 20px;
+    border: 1px solid #f3f6f3;
+    flex-direction: column;
+    border-radius: 4px  ;
+}
+
+.paymentOptionBoxes-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px ;
+}
+
+.paymentOptionBoxes-flex{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79);
+
+}
+
+.centerHeading{
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.centertext{
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.paymentOptionBoxes-image-box{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentOptionBoxes-image{
+    height: inherit;
+    object-fit: contain;
+}
+
+.paymentOptionBoxes-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentOptionBoxes-content-text{
+    text-align: center;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+  
+@media screen and (max-height: 800px){
+   
+    
+}
+
+
+/* TRANSACTION PORTAL */
+
+.transactionPortal-text{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.transactionPortal{
+    max-width: 300px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79); */
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+.transactionPortal-column{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.transactionPortal-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.transactionPortal-text-left{
+    width: 50%;
+    margin: 3px;
+    text-align: left;
+}
+
+.transactionPortal-text-right{
+    width: 50%;
+    margin: 3px;
+    text-align: right;
+   
+}
+
+.transactionPortal-text-left .transactionPortal-text{
+    font-size: 15px;
+}
+
+.transactionPortal-text-right .transactionPortal-text{
+    font-size: 14px;
+}
+
+.transactionPortal-text{
+    font-size: 20px;
+    text-align: center;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.transactionPortal-address-flex{
+    display: flex;
+    flex-direction: row;
+    min-width: 300px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #5a1d65;
+}
+
+.transactionPortal-address-flex .transactionPortal-address-text-box{
+    width: 85%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.transactionPortal-address-text{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px;
+    text-align: center;
+}
+
+
+.transactionPortal-address-icon-box{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.transactionPortal-address-icon{
+    color:#f5a623 ;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+/* SUCCESS PAGE */
+.successPage-box{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    align-items: left;
+    padding: 20px;
+}
+
+
+
+.succesPage-image-section{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+}
+
+.successPage-image-file{
+    object-fit: contain;
+    height: inherit;
+}
+
+.successPage-text-large{
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px 0px 10px 0px;
+}
+.successPage-text-small{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px 0px 10px 0px;
+}
+
+
+/* SUCCESS PAGE DESIGNS ENDS HERE */
+
+/* STEPS DESIGNS */
+.steps-changer-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.steps-changer-previousButton-icon-a{
+    text-align: center;
+    font-size: 20px;
+    color: purple;
+    margin-right: auto;
+}
+
+.steps-changer-previousButton-icon-b{
+    text-align: center;
+    font-size: 20px;
+    color: purple;
+    margin-left: auto;
+}
+
+.steps-changer-indicators{
+    display: flex;
+    grid-gap: 20px;
+    /* grid-template-columns:  repeat(6, 1fr); */
+    /* padding: 20px 0px 20px 0px; */
+    margin: auto;
+}
+
+.steps-changer-indicators-items{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.steps-changer-indicators-icons{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(202, 92, 202);
+}
+
+.steps-changer-indicators-icons-active{
+    text-align: center;
+    font-size: 20px;
+    color: purple;
+}
+
+
+/* SUMMARY SECTION COMPONENT */
+
+/* SUCCESS PAGE */
+.summarySection-box{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    align-items: left;
+    padding: 0px;
+}
+
+
+.summarySection-text-large{
+    text-align: left;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px 0px 10px 0px;
+}
+.summarySection-text-small{
+    text-align: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px 0px 10px 0px;
+}
+
+
+  
+@media screen and (max-height: 900px){
+   .summarySection-text-large{
+    text-align: left;
+    font-size: 20px;
+   }
+    
+
+   .summarySection-text-small{
+    text-align: left;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px 0px 10px 0px;
+}
+}
+
+/* SUMMARY SECTION COMPONENT ENDS HERE */
+
+
+/* COIN SELECTION DESGIN */
+.coins-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
+}
+
+.coins-item-row{
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    margin: 5px;
+}
+
+.coins-item-image{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 2rem;
+    align-self: center;
+}
+
+.coins-item-image-file{
+    height: inherit;
+    object-fit: contain;
+}
+
+.coins-item-text-section{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+    padding-left: 5px;
+}
+
+.coins-item-text{
+    font-size: 20px;
+    /* font-weight: bold; */
+    text-align: left;
+}
+
+.coins-item-row-active{
+    border: 1px solid #5a1d65;
+    border-radius: 8px;
+    transition: 0.3ms;
+}
+
+
+/* PAYMENT DETAILS SECTION */
+
+.mandoe-payment-window{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.mandoe-payment-text-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.mandoe-payment-heading{
+    font-size: 25px;
+    color: #0f8823;
+    font-weight: 500;
+    text-align: center;
+}
+
+.mandoe-payment-text{
+    font-size: 17px;
+    color: #0f8823;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mandoe-payment-icon{
+    font-size: 17px;
+    color: #0f8823;
+    text-align: center;
+}
+
+.mandoe-payment-details-section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.mandoe-payment-row-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.mandoe-payment-row-box-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.mandoe-payment-row-box-right{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    /* align-items: flex-end;
+    width: 50%; */
+}
+
+.mandoe-payment-text-left{
+    text-align: left;
+    font-size: 17px;
+    color:#0f8823;
+}
+
+
+.mandoe-payment-text-right{
+    text-align: left;
+    font-size: 17px;
+    color:#0f8823;
+}
+
+.mandoe-payment-crypto-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.mandoe-payment-qr{
+    display: flex;
+    flex-direction: column;
+    /* height: 200px; */
+    width: 50%;
+}
+.mandoe-payment-wallet{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin :20px 0px 0px 0px
+}
+
+.mandoe-payment-wallet-text{
+    font-size: 13px;
+    color: gray;
+    text-align: left;
+}
+
+.mandoe-payment-wallet-transaction-details{
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    margin: 5px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.mandoe-payment-wallet-transaction-details-text-box{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mandoe-payment-wallet-transaction-details-text{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    color:#0f8823;
+}
+
+.mandoe-payment-wallet-transaction-icon-box{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mandoe-payment-wallet-transaction-icon{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    color: #0f8823;
+}
+
+
+.mandoe-payment-wallet-copy-button{
+    width: 100%;
+    background-size: 200% auto;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+    text-align: center;
+    background-color: #0f8823;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Open Sans,sans-serif;
+    line-height: 50px;
+    border-radius: 0;
+    margin-top: 00px;
+    border: none;
+    border-radius: 10px;
+}
+
+.mandoe-spinning-icon{
+    font-size: 17px;
+    color: #0f8823;
+}
